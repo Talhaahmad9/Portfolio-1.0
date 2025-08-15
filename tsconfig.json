@@ -1,0 +1,36 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // Environment Settings
+    "module": "ESNext",                         // ✅ Use ES modules for Vite compatibility
+    "target": "ESNext",                         // ✅ Modern JavaScript output
+    "lib": ["ESNext", "DOM"],                   // ✅ Includes browser APIs
+    "moduleResolution": "Node",                 // ✅ Resolves modules like Node.js
+
+    // JSX Support
+    "jsx": "react-jsx",                         // ✅ React 18+ JSX transform
+
+    // Output Control
+    "noEmit": true,                             // ✅ Don't generate .js/.d.ts files
+    "sourceMap": false,                         // ❌ Disable unless debugging
+    "declaration": false,                       // ❌ Not needed unless publishing a library
+    "declarationMap": false,                    // ❌ Avoid clutter
+
+    // Typechecking Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+
+    // Compatibility & Performance
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Module Syntax
+    "verbatimModuleSyntax": false               // ✅ Allows default imports like `import react from ...`
+  },
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
