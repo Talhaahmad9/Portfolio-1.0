@@ -1,10 +1,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/portfolio-1.0/", // 👈 This is the key line
+  base: "/portfolio-1.0/",
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 });
 
   
