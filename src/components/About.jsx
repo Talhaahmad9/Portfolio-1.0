@@ -1,7 +1,9 @@
+import profilePic from "../assets/profile-photo.jpg";
+
 export default function About() {
     return <>
         <section className="hero container">
-            <img src="../assets/profile-photo.JPG" alt="profile-photo" />
+            <img src={profilePic} alt="profile-photo" />
             <h3 id="name">Hi, Iam Talha Ahmad</h3>
             <p className="intro">I’m a full-stack developer with a sharp eye for frontend design and a solid grasp of backend architecture. From crafting responsive React interfaces to building secure RESTful APIs with Node and Express, I focus on delivering clean, scalable web solutions. I work comfortably across the stack—customizing WordPress, integrating PostgreSQL databases, and implementing OAuth for authentication—while always keeping user experience at the core.</p>
             <div class="cta-buttons">
